@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Goblin+One:regular" rel="stylesheet" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body class="overflow-x-hidden bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-500 ease-in-out">
+    <nav id="navbar" class="flex justify-between gap-3 sm:gap-6 px-3 sm:px-4 md:px-14 py-1 md:py-3 shadow-[0_1px_0px_rgba(0,0,0,0.1)] items-center fixed top-0 left-0 w-full z-50 bg-white dark:bg-slate-950 dark:text-white backdrop-blur-md">
+        <h1 class="font-bold text-[20px] sm:text-[25px] text-primary md:pl-[30px]">TechFlow</h1>
+        <ul class="hidden md:flex justify-center gap-[40px] items-center">
+            <li class="hover:text-primary"><a href="#features">Features</a></li>
+            <li class="hover:text-primary"><a href="#services">Services</a></li>
+            <li class="hover:text-primary"><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="themetoggle" class="bg-gray-300 rounded-full w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center cursor-pointer text-black flex-shrink-0">
+            <i class="fa-regular fa-moon"></i>
+        </div>
+        <button class="bg-primary hidden md:block text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full hover:bg-[#0f766e] duration-300 cursor-pointer text-sm sm:text-base flex-shrink-0">Get Started</button>
+    </nav>
+
+    <section class="relative pt-16 sm:pt-20 overflow-hidden w-full bg-gradient-to-br from-[#eefbf8] via-[#ffffff] to-[#ecfeff] opacity-0 translate-y-10 transition-all duration-700 ease-out dark:from-slate-950 dark:via-slate-900 dark:to-slate-950 pb-5 md:pb-0" id="hero">
+        <div class="absolute top-[300px] w-[200px] md:w-[600px] h-[100px] md:h-[200px] bg-[#5eead4] rounded-full blur-[80px] md:blur-[120px] opacity-30 hidden sm:block"></div>
+        <div class="absolute right-0 w-[150px] md:w-[400px] h-[150px] md:h-[400px] bg-[#93c5fd] rounded-full blur-[80px] md:blur-[120px] opacity-30 hidden sm:block"></div>
+        <div class="relative flex items-center flex-col w-full px-4 sm:px-6 md:p-[90px] mt-2 sm:mt-4">
+            <h2 class="font-medium bg-[#e6fffb] px-2.5 py-2 rounded-full text-[#0f766e] text-xs sm:text-sm">NOW IN PUBLIC BETA</h2>
+            <h1 class="text-4xl sm:text-5xl md:text-[100px] font-bold text-center pb-2 sm:pb-4 md:pb-0 leading-[1.1] sm:leading-[1.2]">Build Faster.</h1>
+            <span class="text-3xl sm:text-4xl md:text-[100px] font-bold -mt-[2px] sm:-mt-[5px] md:-mt-[15px] text-[#1b44a3] pb-1 sm:pb-2 md:pb-4 leading-[1.1] sm:leading-[1.2]">Ship Smarter.</span>
+            <p class="font-medium text-sm sm:text-base md:text-[20px] max-w-[590px] px-1 text-center [word-spacing:2px] mt-1 sm:mt-2">TechFlow is a modern dev toolkit that helps you design,build
+                <span class="md:pl-[20px] pl-0">and launch beautiful products — without the boilerplate.</span>
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-3 w-full max-w-[500px] sm:max-w-none mt-2 sm:mt-3">
+                <button class="bg-primary w-full px-4 py-3 rounded-full sm:w-[200px] mb-2 sm:mb-0 sm:mr-4 cursor-pointer mt-3 sm:mt-4 shadow-[0px_3px_10px_rgba(20,184,166,0.5)] duration-300 hover:bg-teal-500/50 text-sm sm:text-base">Start for free <i class="fa-solid fa-arrow-right"></i></button>
+                <button id="#how-it-works" class="hover:bg-gray-100 dark:hover:bg-slate-600 dark:hover:text-white border border-black/30 dark:border-white px-4 py-3 rounded-full sm:w-[200px] cursor-pointer sm:mt-4 duration-300 w-full text-sm sm:text-base">See How It Works</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-100 scroll-mt-20 dark:bg-slate-800" id="features">
+        <div class="flex justify-center items-center flex-col pt-[25px] sm:pt-[35px] px-3 sm:px-4" id="how-it-works">
+            <h1 class="font-bold text-2xl sm:text-[30px] text-center">Everything You Need</h1>
+            <p class="font-medium text-gray-500 pt-2 mb-6 sm:mb-8 text-center px-2 sm:px-4 text-sm sm:text-base">Powerful tools designed for modern developers and teams
+                of all <span class="block text-center">sizes</span>
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-2 sm:px-4 md:px-14 gap-4 sm:gap-6 mb-12 sm:mb-16 w-full" id="services">
+                <div class="shadow-[0_0px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)] rounded-2xl bg-[#ffffff] p-4 sm:p-[20px] hover:-translate-y-2.5 transition-all duration-150 ease-in-out hover:shadow-[0px_10px_25px_rgba(20,184,166,0.3)] duration-300 md:py-[30px] md:px-[20px] dark:bg-slate-700 dark:hover:shadow-[0px_10px_25px_rgba(20,184,166,0.6)]">
+                    <div class="rounded-[10px] bg-purple-200 text-purple-600 w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] flex justify-center items-center mb-2">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h2 class="font-medium text-lg sm:text-[20px] pb-1.5">Lightning Fast</h2>
+                    <p class="text-sm sm:text-base">Optimized build pipeline with zero-config setup. Deploy in seconds,not hours.</p>
+                </div>
+                <div class="shadow-[0_0px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)] rounded-2xl bg-[#ffffff] p-4 sm:p-[20px] hover:-translate-y-2.5 transition-all duration-150 ease-in-out hover:shadow-[0px_10px_25px_rgba(20,184,166,0.3)] duration-300 md:py-[30px] md:px-[20px] dark:bg-slate-700 dark:hover:shadow-[0px_10px_25px_rgba(20,184,166,0.6)]">
+                    <div class="rounded-[10px] bg-green-200 text-green-500 w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] flex justify-center items-center mb-2">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h2 class="font-medium text-lg sm:text-[20px] pb-1.5">Secure by Default</h2>
+                    <p class="text-sm sm:text-base">Enterprise-grade security baked in from day one. No extra config required.</p>
+                </div>
+                <div class="shadow-[0_0px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)] rounded-2xl bg-[#ffffff] p-4 sm:p-[20px] hover:-translate-y-2.5 transition-all duration-150 ease-in-out hover:shadow-[0px_10px_25px_rgba(20,184,166,0.3)] duration-300 md:py-[30px] md:px-[20px] dark:bg-slate-700 dark:hover:shadow-[0px_10px_25px_rgba(20,184,166,0.6)]">
+                    <div class="rounded-[10px] bg-sky-200 text-sky-500 w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] flex justify-center items-center mb-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <h2 class="font-medium text-lg sm:text-[20px] pb-1.5">Clean API</h2>
+                    <p class="text-sm sm:text-base">Intuitive, well-documented APIs that your team will actually enjoy using.</p>
+                </div>
+                <div class="shadow-[0_0px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)] rounded-2xl bg-[#ffffff] p-4 sm:p-[20px] hover:-translate-y-2.5 transition-all duration-150 ease-in-out hover:shadow-[0px_10px_25px_rgba(20,184,166,0.3)] duration-300 md:py-[30px] md:px-[20px] dark:bg-slate-700 dark:hover:shadow-[0px_10px_25px_rgba(20,184,166,0.6)]">
+                    <div class="rounded-[10px] bg-orange-200 text-orange-500 w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] flex justify-center items-center mb-2">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h2 class="font-medium text-lg sm:text-[20px] pb-1.5">Team Collaboration</h2>
+                    <p class="text-sm sm:text-base">Invite your team, set roles, and ship together with real-time collaboration.</p>
+                </div>
+                <div class="shadow-[0_0px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)] rounded-2xl bg-[#ffffff] p-4 sm:p-[20px] hover:-translate-y-2.5 transition-all duration-150 ease-in-out hover:shadow-[0px_10px_25px_rgba(20,184,166,0.3)] duration-300 md:py-[30px] md:px-[20px] dark:bg-slate-700 dark:hover:shadow-[0px_10px_25px_rgba(20,184,166,0.6)]">
+                    <div class="rounded-[10px] bg-yellow-200 text-yellow-500 w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] flex justify-center items-center mb-2">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h2 class="font-medium text-lg sm:text-[20px] pb-1.5">Analytics Built-in</h2>
+                    <p class="text-sm sm:text-base">Track performance, errors, and usage with a beautiful dashboard out of the box.</p>
+                </div>
+                <div class="shadow-[0_0px_3px_rgba(0,0,0,0.1)] dark:shadow-[0_10px_30px_rgba(0,0,0,0.6)] rounded-2xl bg-[#ffffff] p-4 sm:p-[20px] hover:-translate-y-2.5 transition-all duration-150 ease-in-out hover:shadow-[0px_10px_25px_rgba(20,184,166,0.3)] duration-300 md:py-[30px] md:px-[20px] dark:bg-slate-700 dark:hover:shadow-[0px_10px_25px_rgba(20,184,166,0.6)]">
+                    <div class="rounded-[10px] bg-pink-200 text-pink-500 w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] flex justify-center items-center mb-2">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h2 class="font-medium text-lg sm:text-[20px] pb-1.5">Developer Love</h2>
+                    <p class="text-sm sm:text-base">Built by developers, for developers. We obsess over the experience so you don't have to.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="flex md:flex-row flex-col md:gap-[40px] lg:gap-[60px] md:items-start px-5 sm:px-8 md:px-12 lg:px-[56px] py-8 sm:py-10 md:py-[56px]" id="contact">
+        <div class="mb-6 md:mb-0">
+            <h2 class="text-primary font-medium text-[22px] sm:text-[25px] pb-[10px]">TechFlow</h2>
+            <p class="text-gray-400 text-[14px] sm:text-[15px] md:max-w-[250px] whitespace-normal">Modern toolkit for modern builders. Trusted by 10,000+ developers worldwide.</p>
+        </div>
+        <div class="flex flex-wrap sm:flex-nowrap md:flex-row flex-col md:items-start md:gap-[60px] lg:gap-[120px] md:justify-between lg:ml-20 md:ml-0 gap-6 sm:gap-8">
+            <div class="mb-2 sm:mb-4 min-w-[100px]">
+                <h3 class="text-gray-700 font-medium text-[18px] sm:text-[20px] mb-2 dark:text-white">TechFlow</h3>
+                <ul class="text-gray-400 pl-[2px] space-y-1.5 dark:text-gray-400 text-sm sm:text-base">
+                    <li class="hover:text-primary"><a href="#">Features</a></li>
+                    <li class="hover:text-primary"><a href="#">Pricing</a></li>
+                    <li class="hover:text-primary"><a href="#">Changelog</a></li>
+                    <li class="hover:text-primary"><a href="#">Roadmap</a></li>
+                </ul>
+            </div>
+            <div class="mb-2 sm:mb-4 min-w-[100px]">
+                <h3 class="text-gray-700 font-medium text-[18px] sm:text-[20px] mb-2 dark:text-white">COMPANY</h3>
+                <ul class="text-gray-400 pl-[2px] space-y-1.5 dark:text-gray-400 text-sm sm:text-base">
+                    <li class="hover:text-primary"><a href="#">About</a></li>
+                    <li class="hover:text-primary"><a href="#">Blog</a></li>
+                    <li class="hover:text-primary"><a href="#">Careers</a></li>
+                    <li class="hover:text-primary"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="mb-2 sm:mb-4 min-w-[100px]">
+                <h3 class="text-gray-700 font-medium text-[18px] sm:text-[20px] mb-2 dark:text-white">LEGAL</h3>
+                <ul class="text-gray-400 pl-[2px] space-y-1.5 dark:text-gray-400 text-sm sm:text-base">
+                    <li class="hover:text-primary"><a href="#">Privacy</a></li>
+                    <li class="hover:text-primary"><a href="#">Terms</a></li>
+                    <li class="hover:text-primary"><a href="#">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mb-8 flex md:justify-between justify-center md:flex-row flex-col p-2.5 items-center gap-1 sm:gap-2">
+        <p class="text-gray-400 text-[12px] sm:text-[14px] dark:text-gray-400 text-center">© 2025 TechFlow, Inc. All rights reserved.</p>
+        <p class="text-gray-400 text-[12px] sm:text-[14px] dark:text-gray-400 text-center">Made with ❤️ using Tailwind CSS.</p>
+    </div>
+</body>
+</html>
